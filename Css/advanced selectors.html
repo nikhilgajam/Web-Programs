@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>advanced selectors</title>
+	
+
+	<style type="text/css">
+
+		nav a{
+			font-variant: small-caps;
+			background: green;
+			color: white;
+			text-decoration: none;
+		}
+
+		nav a:hover{
+			color: orange;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+
+
+	<h1>advanced selectors</h1>
+
+	<p>Some selectors follow the DOM</p>
+
+
+	<h3>Descendant selectors(nav a)</h3>
+	<p>&nbsp Style all of the anchor links ind=side a nav tag</p>
+
+
+	<h3>Child selectors (nav>a)</h3>
+	<p>&nbsp more constraining the anchor elements must be a child of the nav, no intermediate tags e.g. paragraph</p>
+
+
+	<h3>Adjacent siblings(hl + ol)</h3>
+	<p>&nbsp elements must be at same level and follow each other</p>
+
+	<nav>
+			<a href="#about">About</a>	
+			<a href="#eatable">Eatables</a>
+			<a href="#ach">Achievements</a>
+			<a href="#more">More About Me</a>
+	</nav>
+
+	<br>
+
+	<a href="#" style="margin-left: 1000px">Hello</a>
+
+	<p>we can also do like<br><mark>p.main</mark> this is going get all the paragraphs in main</p>
+
+	<p><mark>header img.special</mark> all the images with class name special will be changed</p>
+
+	<p><mark>p, h1, #main, .special</mark> we can group like this also</p>
+
+
+</body>
+
+</html>

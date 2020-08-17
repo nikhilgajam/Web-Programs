@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Transforms 2D</title>
+	<style type="text/css">
+
+		.normal{
+			width: 100px;
+			height: 60px;
+			background: orange;
+		}
+		
+		.translate{
+			width: 100px;
+			height: 60px;
+			background: orange;
+			transform: translate(1, 100);
+			/* It moves the thing up or down a little bit */
+		}
+
+		.rotate{
+			width: 100px;
+			height: 60px;
+			background: orange;
+			transform: rotate(60deg);
+		}
+
+		.scale{
+			width: 100px;
+			height: 60px;
+			background: orange;
+			transform: scale(1, 2);
+		}
+
+		.skew{
+			margin-left: 40px;
+			width: 100px;
+			height: 60px;
+			background: orange;
+			transform: skew(40deg, 15deg);
+		}
+
+		
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<h1>Transforms 2D</h1>
+	<p>2D Transform Options. To know more click <a href="https://www.w3schools.com/css/css3_2dtransforms.asp">here</a></p>
+
+	<h2>Options</h2>
+	<ul>
+		<li>translate</li>
+		<p>transform:translate(x,y);<br>
+		   &nbsp move x pixels to left(-)/right(+) and y pixel up(-)/down(+)<br>&nbsp transform:translate(100, 75);</p>
+
+		<li>rotate</li>
+		<p>transform:rotate(xdeg);<br>
+		   &nbsp Rotate/spin the element a certain number of degrees<br>&nbsp transform:rotate(60deg);</p>
+		<li>scale</li>
+		<p>transform:scale(width, height);<br>
+		   &nbsp Change the width and height of the element<br>&nbsp transform:scale(2, 3);</p>
+		<li>skew</li>
+		<p>transform:skew(x-angle, y-angle);<br>
+		   &nbsp Rotate the element a certain number of degrees along the x and y axis<br>&nbsp transform:skew(40deg, 15deg);</p>
+		<li>matrix</li>
+		<p>transform:matrix() - combines all of the 2D transform methods into one<br>&nbsp transform:skew(40deg, 15deg);</p>
+	</ul>
+
+	<br>
+
+	<hr>
+
+
+	<div class="normal">
+		Normal
+	</div>
+
+	<br><br>
+
+	<div class="translate">
+		Translate
+	</div>
+
+	<br><br>
+
+	<div class="rotate">
+		Rotate
+	</div>
+	
+	<br><br><br><br>
+
+	<div class="scale">
+		Scale
+	</div>
+
+	<br><br><br>
+
+	<div class="skew">
+		Skew
+	</div>
+
+
+
+</body>
+
+</html>

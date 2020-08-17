@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Transitions</title>
+	<style type="text/css">
+
+		div{
+			color: #000000;
+			background: #2db40a;
+			line-height: 200px;
+			text-align: center;
+			width: 250px;
+			height: 200px;
+			border-radius: 6px;
+
+			transition-property: color, width, background, border-radius;
+			transition-duration: 0.6s;
+			transition-timing-function: linear;
+			transition-delay: 0.1s;
+		}
+
+		div:hover{
+			color: black;
+			width: 350px;
+			background: orange;
+			border-radius: 50%;
+		}
+
+		div:active{
+			color: #000000;
+			width: 150px;
+			background: blue;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<h1>Transitions</h1>
+
+	<p>When elements transition from one state to another, you can alter their apperance</p>
+	<ul>
+		<li><small>If you hover over the link, change the color</small></li>
+		<li><small>If an image comes into focus, change the size</small></li>
+	</ul>
+
+	<p>More on transitions <a href="https://www.w3schools.com/css/css3_transitions.asp">W3CSchools Transitions</a></p>
+
+	<br>
+
+	<h2>The Properties</h2>
+
+	<h3>transition-property</h3>
+	<p>&nbsp What is it you want to change? (size, color, position, etc)</p>
+
+	<h3>transition-duration</h3>
+	<p>&nbsp How long should each transition last</p>
+
+	<h3>transition-timing</h3>
+	<p>&nbsp Should it be a smooth transition (linear)? Or different</p>
+
+	<h3>transition-delay</h3>
+	<p>&nbsp How long should the wait be before the transition begins?</p>
+
+	<br>
+
+	<h3>Using Shorthands</h3>
+	<p>If you have multiple properties transitioning, you can use shorthand<br>
+	   Ex:<br>
+	   <mark>transition: background .2s linear, border-radius 1s ease-in 1s;</mark>
+	</p>
+
+
+	<div>
+		<h1>Hello World</h1>
+	</div>
+
+
+
+</body>
+
+</html>

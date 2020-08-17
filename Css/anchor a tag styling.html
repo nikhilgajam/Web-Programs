@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>a styling</title>
+
+	<style type="text/css">
+
+		a{
+			font-size: 100px;
+		}
+
+		a:link{
+			color: purple;
+		}
+
+		a:active{
+			color: gray;
+			border: solid 3px black;
+		}
+
+		a:visited{
+			color: orange;
+		}
+
+		a:focus{
+			/* With keyboard tab */
+			color:gray;
+		}
+
+		a:hover{
+			color: green;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+
+
+	<!-- We have some conditions -->
+
+
+	<h1>a styling</h1>
+
+	<a target="_blank" href="https://google.com">Google</a>
+
+	<br>
+
+	<p>Precedence<br><br>
+		
+	a:hover MUST come after a:link <br> and a:visited <br> a:active MUST come after a:hover</p>
+
+
+</body>
+
+</html>

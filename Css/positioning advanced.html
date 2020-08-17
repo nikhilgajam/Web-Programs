@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Positioning</title>
+	<style type="text/css">
+
+		.divs{
+			height: 400px;
+			width: 500px;
+			position: relative;
+			border: 5px solid black;
+		}
+
+		.para{
+			border: 1px solid orange;
+			width: 50%;
+			position: static;
+			/* Change these values and see use fixed to see popups, absolute to overlap */
+			/* static, relative, absolute, fixed */
+			top: 100px;
+			left: 100px;
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
+			-webkit-margin-start: 0;
+			-webkit-margin-end: 0;
+		}
+		
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<h1>Positioning</h1>
+	<p>There are four postioning properties</p>
+
+	<h3>They are:</h3>
+	<ul>
+		<li>static</li>
+		<p>Default values for elements.<br>Place in the next available position.<br>Not affected by the top, bottom, left and right properties.</p>
+		<br>
+
+		<li>relative</li>
+		<p>Positioned "relative to itself".<br>Take the static position, but add offsets.<br>The new positioning dooes NOT affect any other element. It is possible to move an element and leave a big hole where it would have been.<br>Relatively positioned elements are often used as container blocks for other elements.</p>
+		<br>
+
+		<li>absolute</li>
+		<p>Element is removed from the document flow and positioned relative to it's "nearest ancestor" (or the root).<br>Other elements behave as if element does not exist.<br>Can end up  on top of another element.</p>
+		<br>
+
+		<li>fixed</li>
+		<p>Positioned relative to the browser window.<br>Will ot move, een if the window is scrolled.<br>Think of popup boxes that wont go away!!!<br>Or a navigation bar that is always visible on the top</p>
+	</ul>
+
+	<p><mark>These Positions are modified by the properties: top, right, bottom, left</mark></p>
+
+	<hr>
+
+	<div class="divs">
+		<p class="para">A</p>
+		<p class="para">AA</p>
+	</div>
+
+	<div class="divs">
+		<p class="para">AAA</p>
+	</div>
+
+
+</body>
+
+</html>

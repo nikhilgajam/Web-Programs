@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Pseudo-Classes</title>
+	<style type="text/css">
+
+		p:hover{
+			border: solid 1px black;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<h1>Pseudo-Classes</h1>
+
+	<h2>Types of Pseudo-Classes:</h2>
+
+
+	<h2>Link</h2>
+	<p>&nbsp :link, :visited</p>
+
+	<h2>User Action</h2>
+	<p>&nbsp :hover, :active, :focus</p>
+
+	<h2>forms(interfaces)</h2>
+	<p>&nbsp :enabled, :checked, :disabled</p>
+
+	<br>
+
+	<h1>Note: These actions will work on all of the tags not only links</h1>
+
+
+	<h2>Structural/Positional</h2>
+	<p>&nbsp :first-child, :last-child, :nth-child(), :only-child<br>
+	   &nbsp :first-of-type, :last-of-type, :only-of-type</p>
+
+	<p><mark>Ex:</mark><br><br>
+	   li:first-child{ code }<br>
+	   li:nth-child(3){   }<br>
+	   p:empty{   }<br>
+	   img:only-of-type{   }<br>
+	   p:last-of-type{   }
+	</p>
+
+	<br>
+
+	<h2>Textual</h2>
+	<p>&nbsp :first-letter, :first-line</p>
+
+	<br>
+
+	<h2>Positional/Generated</h2>
+	<p>&nbsp :before, :after</p>
+
+	<br>
+
+	<h2>fragments</h2>
+	<p>&nbsp ::selection</p>
+
+	<h2>OK</h2>
+
+
+</body>
+
+</html>

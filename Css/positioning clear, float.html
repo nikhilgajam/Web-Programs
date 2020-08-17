@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>clear and float</title>
+
+	<style type="text/css">
+
+		span{
+			background: green;
+			float: right;
+			width: 10%;
+			height: 70px;
+		}
+
+		div{
+			background: cyan;
+			height: 100px;
+			width: 500px;
+			float: left;
+		}
+
+		p{
+			background: violet;
+			height: 100px;
+			width: 400px;
+			clear: both;
+		}
+		
+	</style>
+
+</head>
+
+<body>
+
+	<h1>clear and float</h1>
+
+	<p>clear will not let anything be at both sides. Used to keep float elements away. Values: left, right, both</p>
+
+	<p>float will reposition elements to the right or left. Elements are aware of one another and will not overlap each other. Values: left, right</p>
+
+
+	<hr>
+
+	<span>Span A</span>
+	<span>Span B</span>
+	<span>Span C</span>
+
+	<hr>
+
+	<div>Div A</div>
+	<div>Div B</div>
+	<div>Div C</div>
+
+	<hr>
+
+	<p>Paragraph 1</p>
+	<p>Paragraph 2</p>
+	<p>Paragraph 3</p>
+
+
+</body>
+
+</html>

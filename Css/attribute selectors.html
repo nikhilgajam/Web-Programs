@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>attribute selectors</title>
+
+
+	<style type="text/css">
+
+		a[href$=".edu"]{
+			background: orange;
+		}
+
+		a[href$=".org"]{
+			background: violet;
+		}
+
+		a[href$=".gov"]{
+			background: green;
+			color: white;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+
+
+
+
+	<h1>attribute selectors</h1>
+
+	<p>we can style like this a[href="info.html"]{code}</p>
+
+	<p>we can do that also</p>
+
+	<h3>Operators</h3>
+
+	<p>^ : match the beginning exactly<br>
+	   Ex:  a[href^ = "http://umich"]
+	</p>
+
+	<p>$ : match the end exactly<br>
+	   Ex:  img[src$ = ".png"] => this is for .png images
+	</p>
+
+	<p>* : wild<br>
+	   Ex: a[href* = "umich"]
+	</p>
+
+	<h3>URL's (Universal Resource Locators)</h3>
+
+	<ul>
+		<li><a href="https://wikipedia.org">Wikipedia</a></li>
+		<li><a href="https://nasa.gov">NASA(National Aeronautical And Space Administration)</a></li>
+		<li><a href="https://duke.edu">Duke</a></li>
+		<li><a href="https://nps.gov">NPS</a></li>
+	</ul>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
